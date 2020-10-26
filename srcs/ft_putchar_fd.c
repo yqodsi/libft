@@ -6,13 +6,13 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 21:50:56 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:41:03 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 10:40:12 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

@@ -6,15 +6,16 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 13:58:25 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:54:33 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 10:38:55 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char *p;
+
 	p = s;
 	while ((int)--n >= 0)
 		*p++ = 0;

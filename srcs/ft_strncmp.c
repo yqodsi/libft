@@ -6,13 +6,13 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 18:45:40 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:41:03 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 10:45:14 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t i;
 

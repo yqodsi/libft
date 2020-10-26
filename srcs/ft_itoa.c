@@ -6,13 +6,13 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 18:01:12 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:41:03 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 10:41:02 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-static size_t numlen(int n)
+static size_t	numlen(int n)
 {
 	size_t i;
 
@@ -22,11 +22,11 @@ static size_t numlen(int n)
 	return (i);
 }
 
-char *ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	char *str;
-	size_t len;
-	unsigned int nb;
+	char			*str;
+	size_t			len;
+	unsigned int	nb;
 
 	len = numlen(n);
 	nb = n;

@@ -6,13 +6,13 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/30 18:30:17 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:41:03 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 10:48:29 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-static void *ft_malfree(char **tab, size_t size, int x)
+static void	*ft_malfree(char **tab, size_t size, int x)
 {
 	void *mem;
 
@@ -29,7 +29,7 @@ static void *ft_malfree(char **tab, size_t size, int x)
 	return (mem);
 }
 
-static int word_count(char const *str, char ch)
+static int	word_count(char const *str, char ch)
 {
 	int x;
 
@@ -48,7 +48,7 @@ static int word_count(char const *str, char ch)
 	return (++x);
 }
 
-static int len(char const *str, char ch)
+static int	len(char const *str, char ch)
 {
 	int x;
 
@@ -61,11 +61,11 @@ static int len(char const *str, char ch)
 	return (++x);
 }
 
-char **ft_split(char const *s, char c)
+char		**ft_split(char const *s, char c)
 {
-	int x;
-	int y;
-	char **tab;
+	int		x;
+	int		y;
+	char	**tab;
 
 	x = 0;
 	if (!s || !(tab = malloc(sizeof(char *) * word_count(s, c))))
