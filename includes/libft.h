@@ -6,7 +6,7 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 18:30:14 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/24 11:55:53 by isel-jao         ###   ########.fr       */
+/*   Updated: 2020/10/26 12:46:19 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,6 @@ void			*ft_calloc(size_t count, size_t size);
 void			ft_putendl_fd(char *s, int fd);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int				get_next_line(int fd, char **line);
 
 #endif

@@ -58,6 +58,7 @@ SRCS	+=	ft_isdigit.c
 SRCS	+=	ft_memcpy.c 
 SRCS	+=	ft_split.c 
 SRCS	+=	ft_strncmp.c 
+SRCS	+=	get_next_line.c 
 
 OBJ			=	$(addprefix $(OBJ_DIR),$(SRCS:.c=.o))
 
@@ -67,12 +68,11 @@ RM			=	/bin/rm -f
 RM_DIR		=	/bin/rm -rf
 
 $(OBJ_DIR)%.o:$(SRCS_DIR)%.c $(INC_DIR)*.h
-	$(CC) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 all:
 	@mkdir -p $(OBJ_DIR)
 	@$(MAKE) $(NAME) --no-print-directory
-	@echo "$(YELLOW)ALL$(NC)"
 
 $(NAME): $(OBJ)
 	@$(AR) $(NAME) $?
@@ -80,11 +80,9 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -rf $(OBJ_DIR)
-	@echo "$(YELLOW)cleen$(NC)"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(YELLOW)fcleen$(NC)"
 
 eclean: clean fclean
 
