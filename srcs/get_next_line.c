@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
+/*   By: isel-jao  <isel-jao@student.42.f>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/20 22:05:39 by isel-jao          #+#    #+#             */
-/*   Updated: 2020/10/26 10:51:13 by isel-jao         ###   ########.fr       */
+/*   Updated: 2021/03/17 00:06:56 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static int	ft_rmp(char **new, int n, char **line, int fd)
 {
