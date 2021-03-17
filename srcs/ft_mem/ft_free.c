@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isel-jao  <isel-jao@student.42.f>          +#+  +:+       +#+        */
+/*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 02:13:14 by isel-jao          #+#    #+#             */
-/*   Updated: 2021/03/17 02:13:55 by isel-jao         ###   ########.fr       */
+/*   Updated: 2021/03/17 15:10:48 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_free(void *ptr)
+void	ft_free(void *ptr)
 {
 	if (ptr)
 		free(ptr);

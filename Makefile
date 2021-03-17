@@ -56,6 +56,7 @@ STR		+=	ft_strncmp.c
 STR		+=	ft_strcpy.c 
 SRC		+=	ft_strmapi.c 
 STR		+=	ft_strcmp.c 
+STR		+=	ft_strisnum.c 
 
 CHAR	=	ft_isdigit.c 
 CHAR	+=	ft_toupper.c 
@@ -63,16 +64,21 @@ CHAR	+=	ft_tolower.c
 CHAR	+=	ft_isalpha.c 
 CHAR	+=	ft_isascii.c 
 CHAR	+=	ft_isalnum.c 
-SRC		+=	ft_isprint.c 
+CHAR	+=	ft_isprint.c 
 
 MATH		=	ft_atoi.c 
 MATH		+=	ft_itoa.c 
+
+TAB		= new_tab.c
+TAB		+= free_tab.c
+TAB		+= tab_len.c
 
 SRC		=	$(addprefix ft_put/, $(PRINT))
 SRC		+=	$(addprefix ft_mem/, $(MEM))
 SRC		+=	$(addprefix ft_str/, $(STR))
 SRC		+=	$(addprefix char/, $(CHAR))
 SRC		+=	$(addprefix ft_math/, $(MATH))
+SRC		+=	$(addprefix tab/, $(TAB))
 SRC		+=	get_next_line.c 
 
 OBJ			=	$(addprefix $(OBJ_DIR),$(SRC:.c=.o))
@@ -92,7 +98,8 @@ all:
 	@mkdir -p $(OBJ_DIR)/ft_mem
 	@mkdir -p $(OBJ_DIR)/ft_put
 	@mkdir -p $(OBJ_DIR)/ft_str
-	$(MAKE) $(NAME) --no-print-directory
+	@mkdir -p $(OBJ_DIR)/tab
+	@$(MAKE) $(NAME) --no-print-directory
 
 $(NAME): $(OBJ)
 	@$(AR) $(NAME) $?

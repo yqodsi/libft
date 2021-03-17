@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   lst_remove_node.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isel-jao  <isel-jao@student.42.f>          +#+  +:+       +#+        */
+/*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 13:04:50 by isel-jao          #+#    #+#             */
-/*   Updated: 2021/03/17 13:28:27 by isel-jao         ###   ########.fr       */
+/*   Updated: 2021/03/17 15:19:54 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lst_remove_node(t_list **list)
+void	ft_lst_remove_node(t_lst **lst)
 {
-	t_list *tmp;
+	t_lst *tmp;
 
-	if (!list)
-		return;
-	ft_free((*list)->content);
-	tmp = *list;
-	if (!(*list)->prev )
+	if (!lst)
+		return ;
+	ft_free((*lst)->content);
+	tmp = *lst;
+	if (!(*lst)->prev)
 	{
-		*list = (*list)->next;
-		(*list)->prev = tmp->prev;
+		*lst = (*lst)->next;
+		(*lst)->prev = tmp->prev;
 		free(tmp);
-		return;
+		return ;
 	}
-	*list = (*list)->prev;
-	(*list)->next = tmp->next;
+	*lst = (*lst)->prev;
+	(*lst)->next = tmp->next;
 	free(tmp);
 }
