@@ -6,7 +6,7 @@
 /*   By: isel-jao  <isel-jao@student.42.f>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 18:30:14 by isel-jao          #+#    #+#             */
-/*   Updated: 2021/03/17 02:43:20 by isel-jao         ###   ########.fr       */
+/*   Updated: 2021/03/17 13:28:38 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,13 @@
 #  define BUFFER_SIZE 16
 # endif
 
+
+// typedef struct		s_list
+// {
+// 	void			*content;
+// 	struct s_list	*next;
+// 	struct s_list	*prev;
+// }					t_list;
 
 // math
 int				ft_atoi(const char *str);
