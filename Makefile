@@ -114,3 +114,10 @@ fclean: clean
 eclean: clean fclean
 
 re: fclean all
+
+test: all main.c
+	@$(CC) main.c -I $(INC_DIR)  $(NAME)  \
+	&& clear \
+	&& echo "---------------- main --------------" \
+	&& ./a.out \
+	&& echo '---------------- end ---------------'

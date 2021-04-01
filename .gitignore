@@ -1,0 +1,11 @@
+# objs
+*.o
+*/*.o
+*/*/*.o
+
+
+# executables
+*.out
+
+# lib
+*.a
