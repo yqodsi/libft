@@ -6,7 +6,7 @@
 /*   By: isel-jao <isel-jao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 18:30:14 by isel-jao          #+#    #+#             */
-/*   Updated: 2021/03/17 15:26:20 by isel-jao         ###   ########.fr       */
+/*   Updated: 2021/04/05 23:21:02 by isel-jao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ typedef struct		s_lst
 */
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int value, int base);
 
 /*
 ** strings
