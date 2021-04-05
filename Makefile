@@ -68,6 +68,7 @@ CHAR	+=	ft_isprint.c
 
 MATH		=	ft_atoi.c 
 MATH		+=	ft_itoa.c 
+MATH		+=	ft_itoa_base.c 
 
 TAB		= new_tab.c
 TAB		+= free_tab.c
